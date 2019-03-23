@@ -8,7 +8,7 @@
     "dev": "tsc -w",
     "lint": "tslint './app/*.ts'",
     "serve": "browser-sync start --server --files ['css/*.css', 'app/*.js', '*.html']",
-    "start": "npm run dev && npm run serve"
+    "start": "npm run serve"
   },
   "repository": {
     "type": "git",
