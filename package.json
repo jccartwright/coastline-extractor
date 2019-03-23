@@ -1,0 +1,31 @@
+{
+  "name": "coastline-extractor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc -w",
+    "lint": "tslint './app/*.ts'",
+    "serve": "browser-sync start --server --files ['css/*.css', 'app/*.js', '*.html']",
+    "start": "npm run dev && npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jccartwright/coastline-extractor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jccartwright/coastline-extractor/issues"
+  },
+  "homepage": "https://github.com/jccartwright/coastline-extractor#readme",
+  "dependencies": {
+    "@types/arcgis-js-api": "^4.10.0",
+    "typescript": "^3.3.4000"
+  },
+  "devDependencies": {
+    "tslint": "^5.14.0"
+  }
+}
