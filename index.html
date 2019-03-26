@@ -2,18 +2,11 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
-    <title>ArcGIS JSAPI 4.10 TypeScript Demo</title>
-    <style>
-      html,
-      body,
-      #viewDiv {
-        padding: 0;
-        margin: 0;
-        height: 100%;
-        width: 100%;
-      }
-    </style>
+    <title>Coastline Extractor</title>
+
     <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
+
     <script>
       var locationPath = location.pathname.replace(/\/[^\/]+$/, "");
       window.dojoConfig = {
@@ -28,7 +21,25 @@
     <script src="https://js.arcgis.com/4.10"></script>
   </head>
   <body>
-    <div id="viewDiv"></div>
+    <div class="wrapper">
+        <div class="box header" id="titleDiv">Header (CSS Grid)</div>
+        <div class="box sidebar">Sidebar</div>
+        <div class="map" id="viewDiv"></div>
+        <div class="box footer" id="footerDiv">Footer</div>
+    </div>
+    
     <script>require(["app/main"]);</script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
