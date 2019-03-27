@@ -4,6 +4,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
     <title>Coastline Extractor</title>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
     <link rel="stylesheet" href="./css/main.css">
 
@@ -22,8 +23,10 @@
   </head>
   <body>
     <div class="wrapper">
-        <div class="box header" id="titleDiv">Header (CSS Grid)</div>
-        <div class="box sidebar">Sidebar</div>
+        <div class="box header" id="titleDiv">Header</div>
+        <div class="box sidebar">
+          <button id="drawExtentBtn" type="button" class="btn btn-primary">Draw Extent</button>
+        </div>
         <div class="map" id="viewDiv"></div>
         <div class="box footer" id="footerDiv">Footer</div>
     </div>
