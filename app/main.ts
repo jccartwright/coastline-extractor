@@ -6,6 +6,7 @@ import Graphic = require("esri/Graphic");
 import Extent = require("esri/geometry/Extent");
 import webMercatorUtils = require("esri/geometry/support/webMercatorUtils");
 import { Point } from "esri/geometry";
+import { Recenter } from "app/Recenter";
 
 
 let extentGraphic: Graphic = null;
@@ -30,6 +31,12 @@ mapView.when(function() {
     //     view: mapView
     // });
     // mapView.ui.add(sketch, "top-right");
+
+    const recenter = new Recenter({
+      view: mapView,
+      initialCenter: [-100.33, 43.69]
+    });
+    mapView.ui.add(recenter, "top-right");
 });
 
 let drawExtentBtnHandler = function() {

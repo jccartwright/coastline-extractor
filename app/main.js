@@ -1,4 +1,4 @@
-define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/layers/GraphicsLayer", "esri/Graphic", "esri/geometry/Extent", "esri/geometry/support/webMercatorUtils"], function (require, exports, EsriMap, MapView, GraphicsLayer, Graphic, Extent, webMercatorUtils) {
+define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/layers/GraphicsLayer", "esri/Graphic", "esri/geometry/Extent", "esri/geometry/support/webMercatorUtils", "app/Recenter"], function (require, exports, EsriMap, MapView, GraphicsLayer, Graphic, Extent, webMercatorUtils, Recenter_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var extentGraphic = null;
@@ -19,6 +19,11 @@ define(["require", "exports", "esri/Map", "esri/views/MapView", "esri/layers/Gra
         //     view: mapView
         // });
         // mapView.ui.add(sketch, "top-right");
+        var recenter = new Recenter_1.Recenter({
+            view: mapView,
+            initialCenter: [-100.33, 43.69]
+        });
+        mapView.ui.add(recenter, "top-right");
     });
     var drawExtentBtnHandler = function () {
         if (extentGraphic) {

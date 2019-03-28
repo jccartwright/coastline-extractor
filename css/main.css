@@ -49,4 +49,16 @@ html, body {
     }
 }
 
-  
+
+/* widget CSS */
+.recenter-tool {
+    padding: 2em;
+    /* width: 150px;
+    height: 50px; */
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .recenter-tool > p {
+    margin: 0;
+  }  
